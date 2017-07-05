@@ -10,7 +10,7 @@ import os
 
 
 cwd = os.getcwd()
-url = str(cwd).replace('C:','file://').replace('\\','/')+"\A330 Wheel.html"
+url = str(cwd).replace('C:','file://').replace('\\','/')+"/A330 Wheel.html"
 html = urllib.request.urlopen(url)
 soup = BeautifulSoup(html,"lxml")
 soup.prettify(formatter=lambda s: s.replace("\xa0", ' '))
