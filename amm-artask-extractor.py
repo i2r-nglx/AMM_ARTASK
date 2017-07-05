@@ -12,13 +12,6 @@ from collections import Counter
 import pickle
 
 ##global variables
-filename = "A330 Wheel.htm"
-output = "amm-artask.txt"
-parser = argparse.ArgumentParser(description='Take in a AMM html file and extract the info to an ARTASK model')
-parser.add_argument('filename', metavar='-f', type=str, 
-                   help='Filename of AMM html')
-parser.add_argument('ouput', metavar='-o', type=str, 
-                   help='Filename of output')
 tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 
 
@@ -408,6 +401,24 @@ def parseStepForTarget(step, toolsList):
 	step.tool = finalTool if finalTool else step.tool    
 
 def main():
+	filename = ""
+	output = "amm-artask.txt"
+	parser = argparse.ArgumentParser(description='Take in a AMM html file and extract the info to an ARTASK model')
+	parser.add_argument('-f','--filename', type=str, nargs = 1,
+	                   help='Filename of AMM html')
+	parser.add_argument('-o', '--output', type=str, nargs = 1,
+	                   help='Filename of output')
+
+	opts = parser.parse_args()
+
+	if opts.filename:
+		filename = opts.filename[0]
+		#print(filename)
+	if opts.output:
+		output = opts.output[0]
+		#print(output)
+
+
 	result = getAllTextFromHTML(filename)                 
 	taskIndicator = "TASK"
 	taskList = splitList(result,taskIndicator,0,len(taskIndicator))
