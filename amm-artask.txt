@@ -22,7 +22,7 @@ Removal of the MLG Wheel
   T: 
   Lift the applicable Main Landing Gear (MLG) wheel clear of the ground on jacks  (Ref. AMM TASK 07-12-00-582-802) . 
   A: lift
-  C: 
+  C: landing gear
   T: 
   On panel 312VU make sure that the ACCU PRESS on the triple indicator has sufficient pressure. If necessary, pressurize the Blue hydraulic system  (Ref. AMM TASK 29-00-00-863-802) . 
   A: pressurize
@@ -36,8 +36,8 @@ Removal of the MLG Wheel
  32-41-11-865-056-A
   Get access to the avionics compartment. Then open, safety and tag this(these) circuit breaker(s):
   A: get access
-  C: 
-  T: 
+  C: avionics compartment
+  T: SAFETY CLIP - CIRCUIT BREAKER
  Get Access
  32-41-11-010-051-A
   Remove the hub cap  (Ref. AMM TASK 32-41-15-000-801) . 
@@ -53,15 +53,15 @@ Removal of the MLG Wheel
   T: 
   Put the  TOOL-R I WHEELS (98F32401001000)  or STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE) below the wheel. 
   A: put
-  C: 
-  T: 
+  C: landing gear
+  T: STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE)
   Remove and discard the cotter pins (6) and the nuts (5). 
   A: remove
-  C: 
+  C: cotter pins
   T: 
   Remove the washers (4) and (8) and the bolts (2). 
   A: remove
-  C: 
+  C: bolts
   T: 
   Use the  SPANNER-AXLE NUT, MLG (460007011)  and remove the axle nut (3). 
   A: remove
@@ -84,7 +84,7 @@ Removal of the MLG Wheel
   A: put
   C: axle assembly
    hasCOVER : False
-  T: 
+  T: COVER - PROTECTION
   Do an inspection of the brake stator slots: (a)For Goodrich-Messier brakes refer to SB 32-3238 or SB 32-4280. (Ref. Fig. Goodrich Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) (b)For Honeywell brakes refer to SB 32-3251 or SB 32-4288. (Ref. Fig. Honeywell Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) 
   A: 
   C: brake stator slots
@@ -100,7 +100,7 @@ Installation of the MLG Wheel
   T: 
   Make sure that the applicable Main Landing Gear (MLG) axle is lifted clear of the ground on jacks  (Ref. AMM TASK 07-12-00-582-802) . 
   A: make sure
-  C: 
+  C: landing gear
   T: 
   On panel 312VU make sure that the ACCU PRESS on the triple indicator has sufficient pressure. If necessary, pressurize the Blue hydraulic system  (Ref. AMM TASK 29-00-00-863-802) . 
   A: pressurize
@@ -113,7 +113,7 @@ Installation of the MLG Wheel
   Make sure the WARNING NOTICE(S) is in the cockpit, to tell persons not to operate the landing gear. 
   A: make sure
   C: cockpit
-  T: 
+  T: WARNING NOTICE(S)
   Make sure that the Green hydraulic system is depressurized (Ref. AMM TASK 29-00-00-864-804) . 
   A: make sure
   C: Green hydraulic system
@@ -123,7 +123,7 @@ Installation of the MLG Wheel
  32-41-11-865-050-A
   Make sure that this(these) circuit breaker(s) is(are) open, safetied and tagged:
   A: make sure
-  C: 
+  C: circuit breaker
   T: 
  Preparation for Installation
  32-41-11-420-052-A
@@ -131,14 +131,14 @@ Installation of the MLG Wheel
   A: remove
   C: axle assembly
    hasCOVER : False
-  T: 
+  T: COVER - PROTECTION
   Make sure that the parts retained from the removed component are clean and in the correct condition.
   A: make sure
   C: 
   T: 
   Clean the component interface and/or the adjacent area.
   A: clean
-  C: 
+  C: component interfaces
   T: 
   Remove all the brake dust particles. 
   A: remove
@@ -146,7 +146,7 @@ Installation of the MLG Wheel
   T: 
   Do a visual inspection of the component interface and/or the adjacent area.
   A: open
-  C: 
+  C: component interfaces
   T: 
   Do an inspection of the tachometer drive shaft assembly. Make sure that the tachometer drive shaft is: ·Not bent or distorted ·Free of fretting marks ·Not scratched, stained or corroded ·In a serviceable condition and the splines are not damaged ·Free to turn. 
   A: push
@@ -158,7 +158,7 @@ Installation of the MLG Wheel
   T: 
   Do an inspection to make sure that the axle sleeve spring clip is serviceable and correctly installed  (Ref. AMM TASK 32-41-14-400-801) . 
   A: make sure
-  C: 
+  C: axle sleeve spring clip
   T: 
   If applicable, do an inspection of the brake stator slots: (a)For Goodrich-Messier brakes refer to SB 32-3238. (Ref. Fig. Goodrich Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) (b)For Honeywell brakes refer to SB 32-3251. (Ref. Fig. Honeywell Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) 
   A: 
@@ -166,7 +166,7 @@ Installation of the MLG Wheel
   T: 
   If applicable, do an inspection of the brake wear indicator  (Ref. AMM TASK 32-40-00-210-802) . 
   A: 
-  C: 
+  C: brake wear indicator
   T: 
   Examine the brake for hydraulic leaks from the hose connections and the pistons. 
   A: 
@@ -174,7 +174,7 @@ Installation of the MLG Wheel
   T: 
   Examine the brake heat pack. Make sure that: ·There is no hydraulic fluid contamination of the carbon parts ·There are no broken rotors or stators ·There is no wear in the rotor drive slots ·There is no foreign object damage ·There are no holes, cracks or chips ·There are no soft areas, where carbon is missing or crushed ·There are no broken or missing links ·There are no broken or missing rivets and the rivet holes are not worn ·There is no oxidation ·There is no other possible damage. 
   A: make sure
-  C: 
+  C: brake heat pack
   T: 
   If the brake is unserviceable, you must replace it  (Ref. AMM TASK 32-42-27-000-801)  and  (Ref. AMM TASK 32-42-27-400-801) . 
   A: replace
@@ -190,7 +190,7 @@ Installation of the MLG Wheel
   T: 
   Make sure that there is no damage to the component interface and the adjacent area. 
   A: make sure
-  C: 
+  C: component interfaces
   T: 
   If the brake rotors are not aligned, do these steps: (a)On panel 117VU, put the PARK BRK lever to the OFF position. (b)Align the brake rotors with the brake stators. (c)On panel 117VU, put the PARK BRK lever to the ON position. 
   A: align
@@ -209,8 +209,8 @@ Installation of the MLG Wheel
   T: 
   Use the  TOOL-R I WHEELS (98F32401001000)  or STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE) to align the wheel (1) with the brake rotors. 
   A: align
-  C: 
-  T: 
+  C: brake stator slots
+  T: STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE)
   Push the wheel (1) fully on the axle. 
   A: push
   C: 
@@ -221,7 +221,7 @@ Installation of the MLG Wheel
   T: 
   Examine the tachometer drive assembly (as much as possible) on the wheel (1). 
   A: push
-  C: 
+  C: tachometer drive
   T: 
   Make sure that the drive shaft assembly and splines were not damaged during the wheel (1) installation. 
   A: make sure
@@ -233,7 +233,7 @@ Installation of the MLG Wheel
   T: 
   Apply a layer of Synthetic Oil base Grease-General Purpose Clay Thickened - (Material No. 03GBB1) to the MLG axle thread. 
   A: 
-  C: 
+  C: axle thread
   T: 
   Install the axle nut (3) on the axle and use the  SPANNER-AXLE NUT, MLG (460007011)  to tighten it. 
   A: install
@@ -241,7 +241,7 @@ Installation of the MLG Wheel
   T: 
   On panel 117VU, put the PARK BRK lever to the OFF position. 
   A: put
-  C: 
+  C: panel
   T: 
   TORQUE the axle nut (3)  to 54.2 m.daN (399.71 lbf.ft) while you slowly turn the wheel in the same direction. 
   A: turn
@@ -273,7 +273,7 @@ Installation of the MLG Wheel
   T: 
   Install the  IPC -CSN (32-11-14-20-075) washer (8),  IPC -CSN (32-11-14-20-073) washers (4) and the new  IPC -CSN (32-11-14-20-060) nuts (5). 
   A: install
-  C: 
+  C: nuts
   T: 
   TORQUE the nuts (5)  to between 0.4 and 0.45 m.daN (35.40 and 39.82 lbf.in). 
   A: torque
@@ -301,7 +301,7 @@ Installation of the MLG Wheel
   T: 
   Make sure that the applicable Main Landing Gear (MLG) axle is lifted clear of the ground on jacks  (Ref. AMM TASK 07-12-00-582-802) . 
   A: make sure
-  C: 
+  C: landing gear
   T: 
   On panel 312VU make sure that the ACCU PRESS on the triple indicator has sufficient pressure. If necessary, pressurize the Blue hydraulic system  (Ref. AMM TASK 29-00-00-863-802) . 
   A: pressurize
@@ -314,7 +314,7 @@ Installation of the MLG Wheel
   Make sure the WARNING NOTICE(S) is in the cockpit, to tell persons not to operate the landing gear. 
   A: make sure
   C: cockpit
-  T: 
+  T: WARNING NOTICE(S)
   Make sure that the Green hydraulic system is depressurized (Ref. AMM TASK 29-00-00-864-804) . 
   A: make sure
   C: Green hydraulic system
@@ -324,7 +324,7 @@ Installation of the MLG Wheel
  32-41-11-865-050-A
   Make sure that this(these) circuit breaker(s) is(are) open, safetied and tagged:
   A: make sure
-  C: 
+  C: circuit breaker
   T: 
  Preparation for Installation
  32-41-11-420-052-A
@@ -332,14 +332,14 @@ Installation of the MLG Wheel
   A: remove
   C: axle assembly
    hasCOVER : False
-  T: 
+  T: COVER - PROTECTION
   Make sure that the parts retained from the removed component are clean and in the correct condition.
   A: make sure
   C: 
   T: 
   Clean the component interface and/or the adjacent area.
   A: clean
-  C: 
+  C: component interfaces
   T: 
   Remove all the brake dust particles. 
   A: remove
@@ -347,7 +347,7 @@ Installation of the MLG Wheel
   T: 
   Do a visual inspection of the component interface and/or the adjacent area.
   A: open
-  C: 
+  C: component interfaces
   T: 
   Do an inspection of the tachometer drive shaft assembly. Make sure that the tachometer drive shaft is: ·Not bent or distorted ·Free of fretting marks ·Not scratched, stained or corroded ·In a serviceable condition and the splines are not damaged ·Free to turn. 
   A: push
@@ -359,7 +359,7 @@ Installation of the MLG Wheel
   T: 
   Do an inspection to make sure that the axle sleeve spring clip is serviceable and correctly installed  (Ref. AMM TASK 32-41-14-400-801) . 
   A: make sure
-  C: 
+  C: axle sleeve spring clip
   T: 
   If applicable, do an inspection of the brake stator slots: (a)For Goodrich-Messier brakes refer to SB 32-3238. (Ref. Fig. Goodrich Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) (b)For Honeywell brakes refer to SB 32-3251. (Ref. Fig. Honeywell Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) 
   A: 
@@ -367,7 +367,7 @@ Installation of the MLG Wheel
   T: 
   If applicable, do an inspection of the brake wear indicator  (Ref. AMM TASK 32-40-00-210-802) . 
   A: 
-  C: 
+  C: brake wear indicator
   T: 
   Examine the brake for hydraulic leaks from the hose connections and the pistons. 
   A: 
@@ -375,7 +375,7 @@ Installation of the MLG Wheel
   T: 
   Examine the brake heat pack. Make sure that: ·There is no hydraulic fluid contamination of the carbon parts ·There are no broken rotors or stators ·There is no wear in the rotor drive slots ·There is no foreign object damage ·There are no holes, cracks or chips ·There are no soft areas, where carbon is missing or crushed ·There are no broken or missing links ·There are no broken or missing rivets and the rivet holes are not worn ·There is no oxidation ·There is no other possible damage. 
   A: make sure
-  C: 
+  C: brake heat pack
   T: 
   If the brake is unserviceable, you must replace it  (Ref. AMM TASK 32-42-27-000-801)  and  (Ref. AMM TASK 32-42-27-400-801) . 
   A: replace
@@ -391,7 +391,7 @@ Installation of the MLG Wheel
   T: 
   Make sure that there is no damage to the component interface and the adjacent area. 
   A: make sure
-  C: 
+  C: component interfaces
   T: 
   If the brake rotors are not aligned, do these steps: (a)On panel 117VU, put the PARK BRK lever to the OFF position. (b)Align the brake rotors with the brake stators. (c)On panel 117VU, put the PARK BRK lever to the ON position. 
   A: align
@@ -410,8 +410,8 @@ Installation of the MLG Wheel
   T: 
   Use the  TOOL-R I WHEELS (98F32401001000)  or STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE) to align the wheel (1) with the brake rotors. 
   A: align
-  C: 
-  T: 
+  C: brake stator slots
+  T: STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE)
   Push the wheel (1) fully on the axle. 
   A: push
   C: 
@@ -422,7 +422,7 @@ Installation of the MLG Wheel
   T: 
   Examine the tachometer drive assembly (as much as possible) on the wheel (1). 
   A: push
-  C: 
+  C: tachometer drive
   T: 
   Make sure that the drive shaft assembly and splines were not damaged during the wheel (1) installation. 
   A: make sure
@@ -434,7 +434,7 @@ Installation of the MLG Wheel
   T: 
   Apply a layer of Synthetic Oil base Grease-General Purpose Clay Thickened - (Material No. 03GBB1) to the MLG axle thread. 
   A: 
-  C: 
+  C: axle thread
   T: 
   Install the axle nut (3) on the axle and use the  SPANNER-AXLE NUT, MLG (460007011)  to tighten it. 
   A: install
@@ -442,7 +442,7 @@ Installation of the MLG Wheel
   T: 
   On panel 117VU, put the PARK BRK lever to the OFF position. 
   A: put
-  C: 
+  C: panel
   T: 
   TORQUE the axle nut (3)  to 54.2 m.daN (399.71 lbf.ft) while you slowly turn the wheel in the same direction. 
   A: turn
@@ -474,7 +474,7 @@ Installation of the MLG Wheel
   T: 
   Install the  IPC -CSN (32-11-14-20-075) washer (8),  IPC -CSN (32-11-14-20-073) washers (4) and the new  IPC -CSN (32-11-14-20-060) nuts (5). 
   A: install
-  C: 
+  C: nuts
   T: 
   TORQUE the nuts (5)  to between 0.4 and 0.45 m.daN (35.40 and 39.82 lbf.in). 
   A: torque
@@ -498,13 +498,13 @@ Installation of the MLG Wheel
  32-41-11-865-052-A
   Get access to the avionics compartment. Then remove the safety clip(s) and the tag(s) and close this(these) circuit breaker(s):
   A: remove
-  C: 
-  T: 
+  C: avionics compartment
+  T: WARNING NOTICE(S)
  Aircraft Maintenance Configuration
  32-41-11-860-051-A
   Inflate the tire to the correct pressure  (Ref. AMM TASK 12-14-32-614-801) . 
   A: 
-  C: 
+  C: tire
   T: 
   Lower the MLG with the jacks  (Ref. AMM TASK 07-12-00-582-802) . 
   A: lower
@@ -519,7 +519,7 @@ Installation of the MLG Wheel
   T: 
   Remove the ground support and maintenance equipment, the special and standard tools and all other items.
   A: remove
-  C: 
+  C: lever
   T: 
   Remove the access platform(s).
   A: remove
@@ -528,4 +528,4 @@ Installation of the MLG Wheel
   Remove the warning notice(s).Figure 32-41-11-991-00200-00-C / SHEET 1/1 - MLG Wheel RemovalFigure 32-41-11-991-01400-00-A / SHEET 1/2 - Brake-Disk Failure Report-SheetFigure 32-41-11-991-01400-00-A / SHEET 2/2 - Brake-Disk Failure Report-SheetFigure 32-41-11-991-01500-00-A / SHEET 1/2 - Honeywell Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow ChartFigure 32-41-11-991-01500-00-A / SHEET 2/2 - Honeywell Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow ChartFigure 32-41-11-991-01600-00-A / SHEET 1/2 - Goodrich Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow ChartFigure 32-41-11-991-01600-00-A / SHEET 2/2 - Goodrich Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart
   A: remove
   C: warning notice
-  T: 
+  T: WARNING NOTICE(S)

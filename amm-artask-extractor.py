@@ -397,11 +397,22 @@ def parseStepForTarget(step, toolsList):
 			step.action = step.action[0]
 		else:
 			step.action = ""
-	step.component = finalCom if finalCom else step.component
-	step.tool = finalTool if finalTool else step.tool    
+	step.component = finalCom if not finalCom.name == "" else step.component
+	step.tool = finalTool if not finalTool.name =="" else step.tool 
+	if type(step.component) == list:
+		if step.component:
+			step.component = component(step.component[0],"",{},"")
+		else:
+			step.component = component("","",{},"")
+	if type(step.tool) == list:
+		if step.tool:
+			step.tool = tool(step.tool[0],"",0,{},"")
+		else:
+			step.tool = tool("","",0,{},"")
+
 
 def main():
-	filename = ""
+	filename = "A330 Wheel.htm"
 	output = "amm-artask.txt"
 	parser = argparse.ArgumentParser(description='Take in a AMM html file and extract the info to an ARTASK model')
 	parser.add_argument('-f','--filename', type=str, nargs = 1,
@@ -462,6 +473,7 @@ def main():
 
 		toolsList, consumables, workzones, references = getSetupInfo(items[1], ["A.","B.","C.","D."])
 		toolListName = [t.name  for t in toolsList]
+		#print (toolListName)
 		ActionsListFile = open("Actions_List", 'r')
 		ActionsList = [a.replace('\n','') for a in ActionsListFile.readlines()]
 		#print (ActionsList)
