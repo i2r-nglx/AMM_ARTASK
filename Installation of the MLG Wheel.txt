@@ -1,94 +1,3 @@
-Removal of the MLG Wheel
-32-41-11-000-801-A
-['WARNING: ', 'MAKE SURE THAT THE SAFETY DEVICES AND THE WARNING NOTICES ARE IN POSITION BEFORE YOU START A TASK ON OR NEAR: ', '-', ' THE FLIGHT CONTROLS ', '-', ' THE FLIGHT CONTROL SURFACES ', '-', ' THE LANDING GEAR AND THE RELATED DOORS ', '-', ' COMPONENTS THAT MOVE. ', 'MOVEMENT OF COMPONENTS CAN KILL OR CAUSE INJURY TO PERSONS AND/OR CAN CAUSE DAMAGE TO THE EQUIPMENT. ', 'WARNING: ', 'LET THE BRAKES AND THE WHEELS BECOME COOL BEFORE YOU GO NEAR THE LANDING GEAR. DO NOT APPLY A LIQUID OR GAS FIRE EXTINGUISHER DIRECTLY ON A HOT WHEEL OR BRAKE UNIT. THIS COULD CAUSE AN EXPLOSION. ', 'WARNING: ', "BE CAREFUL WHEN YOU USE CONSUMABLE MATERIALS. OBEY THE MATERIAL MANUFACTURER'S INSTRUCTIONS AND YOUR LOCAL REGULATIONS. ", ' ', ' ', 'FIN : ', '6500GG ', ', ', '6501GG ', ', ', '6502GG ', ', ', '6503GG ', ', ', '6504GG ', ', ', '6505GG ', ', ', '6506GG ', ', ', '6507GG ']
- Safety Precautions
- 32-41-11-941-051-A
-  Put the WARNING NOTICE(S) in the cockpit, to tell persons not to operate the landing gear. 
-  A: put
-  C: cockpit
-  T: WARNING NOTICE(S)
-   inCOCKPIT : False
- Aircraft Maintenance Configuration
- 32-41-11-860-052-A
-  Install the safety devices on the landing gear  (Ref. AMM TASK 32-00-00-481-801) . 
-  A: install
-  C: landing gear
-   hasSAFETY DEVICES : False
-  T: 
-  Make sure that the Green hydraulic system is depressurized (Ref. AMM TASK 29-00-00-864-804) . 
-  A: make sure
-  C: Green hydraulic system
-   isDEPRESSURIZED : False
-  T: 
-  Lift the applicable Main Landing Gear (MLG) wheel clear of the ground on jacks  (Ref. AMM TASK 07-12-00-582-802) . 
-  A: lift
-  C: landing gear
-  T: 
-  On panel 312VU make sure that the ACCU PRESS on the triple indicator has sufficient pressure. If necessary, pressurize the Blue hydraulic system  (Ref. AMM TASK 29-00-00-863-802) . 
-  A: pressurize
-  C: Blue hydraulic system
-  T: 
-  On the panel 117VU, put the PARK BRK lever to the ON position. 
-  A: put
-  C: panel
-  T: 
- Get access to the avionics compartment. Then open, safety and tag this(these) circuit breaker(s):
- 32-41-11-865-056-A
-  Get access to the avionics compartment. Then open, safety and tag this(these) circuit breaker(s):
-  A: get access
-  C: avionics compartment
-  T: SAFETY CLIP - CIRCUIT BREAKER
- Get Access
- 32-41-11-010-051-A
-  Remove the hub cap  (Ref. AMM TASK 32-41-15-000-801) . 
-  A: remove
-  C: hub cap
-  T: 
- Removal of the MLG Wheel 
- 32-41-11-020-050-B
-  Decrease the tire pressure to 2.0 bar (29.0075 psi). (a)Remove the cap (7) from the inflation valve. (b)Attach an ADAPTER - TIRE INFLATION/DEFLATION to the inflation valve. (c)Decrease the tire pressure until the pressure gage shows 2.0 bar (29.0075 psi). (d)Remove the tire inflation adaptor. (e)Put the cap (7) on the inflation valve. 
-  A: remove
-  C: tire inflation adaptor
-   hasCAP : False
-  T: 
-  Put the  TOOL-R I WHEELS (98F32401001000)  or STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE) below the wheel. 
-  A: put
-  C: landing gear
-  T: STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE)
-  Remove and discard the cotter pins (6) and the nuts (5). 
-  A: remove
-  C: cotter pins
-  T: 
-  Remove the washers (4) and (8) and the bolts (2). 
-  A: remove
-  C: bolts
-  T: 
-  Use the  SPANNER-AXLE NUT, MLG (460007011)  and remove the axle nut (3). 
-  A: remove
-  C: axle nut
-  T: 
-  Install the  GUIDE CONE-WHEEL (M47381) . 
-  A: install
-  C: 
-  T: 
-  Remove the wheel (1) with the applicable tool. 
-  A: remove
-  C: 
-  T: 
-  If necessary, clean the applicable MLG axle-equipment carrier as follows: (a)Remove the axle equipment carrier  (Ref. AMM TASK 32-48-52-000-801) . (b)Use a Textile-Lint free Cotton - (Material No. 14SBA1) and Non Aqueous Cleaner-General - - (Material No. 08BAA9) to clean the component interfaces. (c)Lubricate and install the axle equipment carrier  (Ref. AMM TASK 32-48-52-400-801) . NOTE: It is recommended to clean the axle equipment carrier at each wheel change to remove carbon brake dust. This will help in easy removal of the axle equipment carrier at the next maintenance check. 
-  A: clean
-  C: component interfaces
-   isRECOMMENDED : False
-  T: 
-  Put a COVER - PROTECTION on the axle assembly. 
-  A: put
-  C: axle assembly
-   hasCOVER : False
-  T: COVER - PROTECTION
-  Do an inspection of the brake stator slots: (a)For Goodrich-Messier brakes refer to SB 32-3238 or SB 32-4280. (Ref. Fig. Goodrich Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) (b)For Honeywell brakes refer to SB 32-3251 or SB 32-4288. (Ref. Fig. Honeywell Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) 
-  A: 
-  C: brake stator slots
-  T: 
 Installation of the MLG Wheel
 32-41-11-400-801-A
 ['WARNING: ', 'MAKE SURE THAT THE SAFETY DEVICES AND THE WARNING NOTICES ARE IN POSITION BEFORE YOU START A TASK ON OR NEAR: ', '-', ' THE FLIGHT CONTROLS ', '-', ' THE FLIGHT CONTROL SURFACES ', '-', ' THE LANDING GEAR AND THE RELATED DOORS ', '-', ' COMPONENTS THAT MOVE. ', 'MOVEMENT OF COMPONENTS CAN KILL OR CAUSE INJURY TO PERSONS AND/OR CAN CAUSE DAMAGE TO THE EQUIPMENT. ', 'WARNING: ', 'MAKE SURE THAT THE WHEEL CHOCKS ARE IN POSITION. MOVEMENTS OF THE AIRCRAFT COULD BE DANGEROUS. ', 'WARNING: ', 'YOU MUST ONLY APPLY A VERY SMALL QUANTITY OF GREASE. A VERY HOT BRAKE CAN CAUSE THE GREASE TO BURN AND CAUSE A FIRE. ', 'WARNING: ', "BE CAREFUL WHEN YOU USE CONSUMABLE MATERIALS. OBEY THE MATERIAL MANUFACTURER'S INSTRUCTIONS AND YOUR LOCAL REGULATIONS. ", ' ', ' ', 'FIN : ', '6500GG ', ', ', '6501GG ', ', ', '6502GG ', ', ', '6503GG ', ', ', '6504GG ', ', ', '6505GG ', ', ', '6506GG ', ', ', '6507GG ']
@@ -196,9 +105,10 @@ Installation of the MLG Wheel
   A: align
   C: brake rotors
   T: 
-  Lubricate the axle sleeve: WARNING: YOU MUST ONLY APPLY A VERY SMALL QUANTITY OF GREASE. A VERY HOT BRAKE CAN CAUSE THE GREASE TO BURN AND CAUSE A FIRE. (a)Put a very small amount of Synthetic Oil base Grease-General Purpose Clay Thickened - (Material No. 03GBB1) on the axle sleeve, only where the wheel bearings will touch when the wheel is installed. (b)Use a clean Textile-Lint free Cotton - (Material No. 14SBA1) to remove unwanted grease from the axle sleeve. 
+  Lubricate the axle sleeve: WARNING: YOU MUST ONLY APPLY A VERY SMALL QUANTITY OF GREASE. A VERY HOT BRAKE CAN CAUSE THE GREASE TO BURN AND CAUSE A FIRE. (a)Put a very small amount of Synthetic Oil base Grease-General Purpose Clay Thickened - (Material No. 03GBB1) on the axle sleeve, only where the wheel bearings will touch when the wheel is installed. (b)Use a clean Textile-Lint free Cotton - (Material No. 14SBA1) to remove unwanted grease from the axle sleeve. 4.Procedure(Ref. Fig. MLG Wheel Removal SHEET 1) NOTE: If the wheel has a pressure-sensor seal cap, make sure that the seal cap is: correctly installed safetied with a nut and cotter pin. 
   A: remove
-  C: wheel bearings
+  C: seal cap
+   isINSTALLED : False
   T: 
  Installation of the MLG Wheel 
  32-41-11-420-050-B
@@ -292,6 +202,207 @@ Installation of the MLG Wheel
   A: install
   C: hub cap
   T: 
+ Safety Precautions
+ 32-41-11-941-050-A
+  Make sure that the wheel chocks are in position on the other landing gears. 
+  A: make sure
+  C: or landing gears
+  T: 
+  Make sure that the applicable Main Landing Gear (MLG) axle is lifted clear of the ground on jacks  (Ref. AMM TASK 07-12-00-582-802) . 
+  A: make sure
+  C: landing gear
+  T: 
+  On panel 312VU make sure that the ACCU PRESS on the triple indicator has sufficient pressure. If necessary, pressurize the Blue hydraulic system  (Ref. AMM TASK 29-00-00-863-802) . 
+  A: pressurize
+  C: Blue hydraulic system
+  T: 
+  On the panel 117VU, make sure that the PARK BRK lever is in the ON position. 
+  A: make sure
+  C: panel
+  T: 
+  Make sure the WARNING NOTICE(S) is in the cockpit, to tell persons not to operate the landing gear. 
+  A: make sure
+  C: cockpit
+  T: WARNING NOTICE(S)
+  Make sure that the Green hydraulic system is depressurized (Ref. AMM TASK 29-00-00-864-804) . 
+  A: make sure
+  C: Green hydraulic system
+   isDEPRESSURIZED : False
+  T: 
+ Make sure that this(these) circuit breaker(s) is(are) open, safetied and tagged:
+ 32-41-11-865-050-A
+  Make sure that this(these) circuit breaker(s) is(are) open, safetied and tagged:
+  A: make sure
+  C: circuit breaker
+  T: 
+ Preparation for Installation
+ 32-41-11-420-052-A
+  Remove the COVER - PROTECTION from the axle assembly. 
+  A: remove
+  C: axle assembly
+   hasCOVER : False
+  T: COVER - PROTECTION
+  Make sure that the parts retained from the removed component are clean and in the correct condition.
+  A: make sure
+  C: 
+  T: 
+  Clean the component interface and/or the adjacent area.
+  A: clean
+  C: component interfaces
+  T: 
+  Remove all the brake dust particles. 
+  A: remove
+  C: 
+  T: 
+  Do a visual inspection of the component interface and/or the adjacent area.
+  A: open
+  C: component interfaces
+  T: 
+  Do an inspection of the tachometer drive shaft assembly. Make sure that the tachometer drive shaft is: ·Not bent or distorted ·Free of fretting marks ·Not scratched, stained or corroded ·In a serviceable condition and the splines are not damaged ·Free to turn. 
+  A: push
+  C: tachometer drive shaft assembly
+  T: 
+  If the tachometer drive is worn or damaged, you must replace it  (Ref. AMM TASK 32-42-57-000-801)  and  (Ref. AMM TASK 32-42-57-400-801) . 
+  A: push
+  C: tachometer drive
+  T: 
+  Do an inspection to make sure that the axle sleeve spring clip is serviceable and correctly installed  (Ref. AMM TASK 32-41-14-400-801) . 
+  A: make sure
+  C: axle sleeve spring clip
+  T: 
+  If applicable, do an inspection of the brake stator slots: (a)For Goodrich-Messier brakes refer to SB 32-3238. (Ref. Fig. Goodrich Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) (b)For Honeywell brakes refer to SB 32-3251. (Ref. Fig. Honeywell Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) 
+  A: 
+  C: brake stator slots
+  T: 
+  If applicable, do an inspection of the brake wear indicator  (Ref. AMM TASK 32-40-00-210-802) . 
+  A: 
+  C: brake wear indicator
+  T: 
+  Examine the brake for hydraulic leaks from the hose connections and the pistons. 
+  A: 
+  C: hose connections
+  T: 
+  Examine the brake heat pack. Make sure that: ·There is no hydraulic fluid contamination of the carbon parts ·There are no broken rotors or stators ·There is no wear in the rotor drive slots ·There is no foreign object damage ·There are no holes, cracks or chips ·There are no soft areas, where carbon is missing or crushed ·There are no broken or missing links ·There are no broken or missing rivets and the rivet holes are not worn ·There is no oxidation ·There is no other possible damage. 
+  A: make sure
+  C: brake heat pack
+  T: 
+  If the brake is unserviceable, you must replace it  (Ref. AMM TASK 32-42-27-000-801)  and  (Ref. AMM TASK 32-42-27-400-801) . 
+  A: replace
+  C: 
+  T: 
+  If there is a fault in the brake disk: ·Record the applicable data in the brake-disk failure report-sheet and send to AIRBUS. (Ref. Fig. Brake-Disk Failure Report-Sheet) 
+  A: 
+  C: brake disk
+  T: 
+  Do an inspection of the heat shield in the wheel to make sure that it is serviceable. 
+  A: make sure
+  C: heat shield
+  T: 
+  Make sure that there is no damage to the component interface and the adjacent area. 
+  A: make sure
+  C: component interfaces
+  T: 
+  If the brake rotors are not aligned, do these steps: (a)On panel 117VU, put the PARK BRK lever to the OFF position. (b)Align the brake rotors with the brake stators. (c)On panel 117VU, put the PARK BRK lever to the ON position. 
+  A: align
+  C: brake rotors
+  T: 
+  Lubricate the axle sleeve: WARNING: YOU MUST ONLY APPLY A VERY SMALL QUANTITY OF GREASE. A VERY HOT BRAKE CAN CAUSE THE GREASE TO BURN AND CAUSE A FIRE. (a)Put a very small amount of Synthetic Oil base Grease-General Purpose Clay Thickened - (Material No. 03GBB1) on the axle sleeve, only where the wheel bearings will touch when the wheel is installed. (b)Use a clean Textile-Lint free Cotton - (Material No. 14SBA1) to remove unwanted grease from the axle sleeve. 4.Procedure(Ref. Fig. MLG Wheel Removal SHEET 1) NOTE: If the wheel has a pressure-sensor seal cap, make sure that the seal cap is: correctly installed safetied with a nut and cotter pin. 
+  A: remove
+  C: seal cap
+   isINSTALLED : False
+  T: 
+ Installation of the MLG Wheel 
+ 32-41-11-420-050-B
+  Make sure that the  GUIDE CONE-WHEEL (M47381)  is installed correctly. 
+  A: make sure
+  C: 
+  T: 
+  Use the  TOOL-R I WHEELS (98F32401001000)  or STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE) to align the wheel (1) with the brake rotors. 
+  A: align
+  C: brake stator slots
+  T: STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE)
+  Push the wheel (1) fully on the axle. 
+  A: push
+  C: 
+  T: 
+  Remove the  GUIDE CONE-WHEEL (M47381) . 
+  A: remove
+  C: 
+  T: 
+  Examine the tachometer drive assembly (as much as possible) on the wheel (1). 
+  A: push
+  C: tachometer drive
+  T: 
+  Make sure that the drive shaft assembly and splines were not damaged during the wheel (1) installation. 
+  A: make sure
+  C: drive shaft assembly
+  T: 
+  Apply a thin layer of Grease-Thread Anti-seize Graphited and Petrolatum - (Material No. 03LBB1) to the splines of the tachometer drive shaft. 
+  A: push
+  C: tachometer drive shaft
+  T: 
+  Apply a layer of Synthetic Oil base Grease-General Purpose Clay Thickened - (Material No. 03GBB1) to the MLG axle thread. 
+  A: 
+  C: axle thread
+  T: 
+  Install the axle nut (3) on the axle and use the  SPANNER-AXLE NUT, MLG (460007011)  to tighten it. 
+  A: install
+  C: axle nut
+  T: 
+  On panel 117VU, put the PARK BRK lever to the OFF position. 
+  A: put
+  C: panel
+  T: 
+  TORQUE the axle nut (3)  to 54.2 m.daN (399.71 lbf.ft) while you slowly turn the wheel in the same direction. 
+  A: turn
+  C: axle nut
+  T: 
+  Loosen the axle nut (3) fully while you turn the wheel slowly in the same direction. 
+  A: loosen
+  C: axle nut
+  T: 
+  TORQUE the axle nut (3)  to 30.5 m.daN (224.93 lbf.ft) while you slowly turn the wheel in the same direction. 
+  A: turn
+  C: axle nut
+  T: 
+  If necessary, tighten the axle nut (3) until two of its slots align with the bolt holes in the axle. 
+  A: tighten
+  C: axle nut
+  T: 
+  Do not tighten to more than 44.0 m.daN (324.48 lbf.ft). 
+  A: tighten
+  C: 
+  T: 
+  Make sure that the holes in the axle equipment carrier are also aligned. 
+  A: make sure
+  C: 
+  T: 
+  Install the bolts (2) with the bolt heads on the outer surface of the axle. 
+  A: install
+  C: bolts
+  T: 
+  Install the  IPC -CSN (32-11-14-20-075) washer (8),  IPC -CSN (32-11-14-20-073) washers (4) and the new  IPC -CSN (32-11-14-20-060) nuts (5). 
+  A: install
+  C: nuts
+  T: 
+  TORQUE the nuts (5)  to between 0.4 and 0.45 m.daN (35.40 and 39.82 lbf.in). 
+  A: torque
+  C: nuts
+  T: 
+  Safety the nuts (5) with the new  IPC -CSN (32-11-14-20-050) cotter pins (6). Make sure that the cotter pins are bent radially around the nuts. 
+  A: safety
+  C: cotter pins
+  T: 
+  Turn the wheel (1) to make sure that it is installed correctly. 
+  A: make sure
+  C: 
+  T: 
+ Close Access
+ 32-41-11-410-050-A
+  Install the hub cap  (Ref. AMM TASK 32-41-15-400-801) . 5.Close-up
+  A: install
+  C: hub cap
+  T: 
  Get access to the avionics compartment. Then remove the safety clip(s) and the tag(s) and close this(these) circuit breaker(s):
  32-41-11-865-052-A
   Get access to the avionics compartment. Then remove the safety clip(s) and the tag(s) and close this(these) circuit breaker(s):
@@ -301,7 +412,7 @@ Installation of the MLG Wheel
  Aircraft Maintenance Configuration
  32-41-11-860-051-A
   Inflate the tire to the correct pressure  (Ref. AMM TASK 12-14-32-614-801) . 
-  A: inflate
+  A: 
   C: tire
   T: 
   Lower the MLG with the jacks  (Ref. AMM TASK 07-12-00-582-802) . 

@@ -1,0 +1,91 @@
+Removal of the MLG Wheel
+32-41-11-000-801-A
+['WARNING: ', 'MAKE SURE THAT THE SAFETY DEVICES AND THE WARNING NOTICES ARE IN POSITION BEFORE YOU START A TASK ON OR NEAR: ', '-', ' THE FLIGHT CONTROLS ', '-', ' THE FLIGHT CONTROL SURFACES ', '-', ' THE LANDING GEAR AND THE RELATED DOORS ', '-', ' COMPONENTS THAT MOVE. ', 'MOVEMENT OF COMPONENTS CAN KILL OR CAUSE INJURY TO PERSONS AND/OR CAN CAUSE DAMAGE TO THE EQUIPMENT. ', 'WARNING: ', 'LET THE BRAKES AND THE WHEELS BECOME COOL BEFORE YOU GO NEAR THE LANDING GEAR. DO NOT APPLY A LIQUID OR GAS FIRE EXTINGUISHER DIRECTLY ON A HOT WHEEL OR BRAKE UNIT. THIS COULD CAUSE AN EXPLOSION. ', 'WARNING: ', "BE CAREFUL WHEN YOU USE CONSUMABLE MATERIALS. OBEY THE MATERIAL MANUFACTURER'S INSTRUCTIONS AND YOUR LOCAL REGULATIONS. ", ' ', ' ', 'FIN : ', '6500GG ', ', ', '6501GG ', ', ', '6502GG ', ', ', '6503GG ', ', ', '6504GG ', ', ', '6505GG ', ', ', '6506GG ', ', ', '6507GG ']
+ Safety Precautions
+ 32-41-11-941-051-A
+  Put the WARNING NOTICE(S) in the cockpit, to tell persons not to operate the landing gear. 
+  A: put
+  C: cockpit
+  T: WARNING NOTICE(S)
+   inCOCKPIT : False
+ Aircraft Maintenance Configuration
+ 32-41-11-860-052-A
+  Install the safety devices on the landing gear  (Ref. AMM TASK 32-00-00-481-801) . 
+  A: install
+  C: landing gear
+   hasSAFETY DEVICES : False
+  T: 
+  Make sure that the Green hydraulic system is depressurized (Ref. AMM TASK 29-00-00-864-804) . 
+  A: make sure
+  C: Green hydraulic system
+   isDEPRESSURIZED : False
+  T: 
+  Lift the applicable Main Landing Gear (MLG) wheel clear of the ground on jacks  (Ref. AMM TASK 07-12-00-582-802) . 
+  A: lift
+  C: landing gear
+  T: 
+  On panel 312VU make sure that the ACCU PRESS on the triple indicator has sufficient pressure. If necessary, pressurize the Blue hydraulic system  (Ref. AMM TASK 29-00-00-863-802) . 
+  A: pressurize
+  C: Blue hydraulic system
+  T: 
+  On the panel 117VU, put the PARK BRK lever to the ON position. 
+  A: put
+  C: panel
+  T: 
+ Get access to the avionics compartment. Then open, safety and tag this(these) circuit breaker(s):
+ 32-41-11-865-056-A
+  Get access to the avionics compartment. Then open, safety and tag this(these) circuit breaker(s):
+  A: get access
+  C: avionics compartment
+  T: SAFETY CLIP - CIRCUIT BREAKER
+ Get Access
+ 32-41-11-010-051-A
+  Remove the hub cap  (Ref. AMM TASK 32-41-15-000-801) . 
+  A: remove
+  C: hub cap
+  T: 
+ DECREASE THE TIRE PRESSURE TO APPROXIMATELY 2 BAR (29 PSI) BEFORE YOU REMOVE THE WHEEL. THIS WILL PREVENT A POSSIBLE EXPLOSION. 
+ 32-41-11-020-050-B
+  Decrease the tire pressure to 2.0 bar (29.0075 psi). (a)Remove the cap (7) from the inflation valve. (b)Attach an ADAPTER - TIRE INFLATION/DEFLATION to the inflation valve. (c)Decrease the tire pressure until the pressure gage shows 2.0 bar (29.0075 psi). (d)Remove the tire inflation adaptor. (e)Put the cap (7) on the inflation valve. 
+  A: remove
+  C: tire inflation adaptor
+   hasCAP : False
+  T: 
+  Put the  TOOL-R I WHEELS (98F32401001000)  or STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE) below the wheel. 
+  A: put
+  C: landing gear
+  T: STANDARD WHEEL R AND I DOLLY (98F32401001000 TYPE)
+  Remove and discard the cotter pins (6) and the nuts (5). 
+  A: remove
+  C: cotter pins
+  T: 
+  Remove the washers (4) and (8) and the bolts (2). 
+  A: remove
+  C: bolts
+  T: 
+  Use the  SPANNER-AXLE NUT, MLG (460007011)  and remove the axle nut (3). 
+  A: remove
+  C: axle nut
+  T: 
+  Install the  GUIDE CONE-WHEEL (M47381) . 
+  A: install
+  C: 
+  T: 
+  Remove the wheel (1) with the applicable tool. 
+  A: remove
+  C: 
+  T: 
+  If necessary, clean the applicable MLG axle-equipment carrier as follows: (a)Remove the axle equipment carrier  (Ref. AMM TASK 32-48-52-000-801) . (b)Use a Textile-Lint free Cotton - (Material No. 14SBA1) and Non Aqueous Cleaner-General - - (Material No. 08BAA9) to clean the component interfaces. (c)Lubricate and install the axle equipment carrier  (Ref. AMM TASK 32-48-52-400-801) . NOTE: It is recommended to clean the axle equipment carrier at each wheel change to remove carbon brake dust. This will help in easy removal of the axle equipment carrier at the next maintenance check. 
+  A: clean
+  C: component interfaces
+   isRECOMMENDED : False
+  T: 
+  Put a COVER - PROTECTION on the axle assembly. 
+  A: put
+  C: axle assembly
+   hasCOVER : False
+  T: COVER - PROTECTION
+  Do an inspection of the brake stator slots: (a)For Goodrich-Messier brakes refer to SB 32-3238 or SB 32-4280. (Ref. Fig. Goodrich Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) (b)For Honeywell brakes refer to SB 32-3251 or SB 32-4288. (Ref. Fig. Honeywell Brakes - Inspection of the MLG Brake Stator Slots for Enlargement - Flow Chart) 
+  A: 
+  C: brake stator slots
+  T: 

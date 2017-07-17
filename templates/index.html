@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMM-AR Task Convertor Demo">
+    <meta name="author" content="nglx (ng_lai_Xing@i2r.a-star.edu.sg">
+
+    <title>AMM-AR Task Convertor Demo</title>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- Script to instantly classify an image once it is uploaded. -->
+    <script type="text/javascript">
+      $(document).ready(
+        function(){
+          $('#classifyfile').attr('disabled',true);
+          $('#ammfile').change(
+            function(){
+              if ($(this).val()){
+                $('#formupload').submit();
+              }
+            }
+          );
+        }
+      );
+    </script>
+
+    <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height:1.5em;
+      color: #232323;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      font-family: Times, serif;
+      line-height:1.5em;
+      border-bottom: 1px solid #ccc;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1><a href="/">AMM-AR Task Convertor Demo</a></h1>
+        <p>
+          A simple demo that reads in an Aircraft Maintenance Manual (AMM) and extracts the tasks into the format of an AR Task Model.
+        </p>
+      </div>
+
+      <div>
+        <h2>Conversion</h2>
+        <a href="/convert_url?ammurl=http%3A%2F%2F127.0.0.1%3A8000%2FA330%2520Wheel.htm">Click for a Quick Example</a>
+      </div>
+
+      {% if has_result %}
+      {% if not result[0] %}
+      <!-- we have error in the result. -->
+      <div class="alert alert-danger">{{ result[1] }} Did you provide a valid URL or a valid AMM file? </div>
+      {% else %}
+      <div class="media">
+        <a class="pull-left" href="#"><iframe class="media-object" width="400" height="800" src={{ ammsrc }}></iframe></a>
+        <div class="media-body">
+          <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              {% for task in result[1] %}
+              {% if loop.index0 == 0 %}
+              <li class="active">
+              {% else %}
+              <li>
+              {% endif %}
+              <a href="#task{{loop.index0}}" data-toggle="tab">{{task.name}}</a></li>
+              {% endfor %}
+            </ul>
+            <div id="myTabContent" class="tab-content">
+            {% for task in result[1] %}
+              {% if loop.index0 == 0 %}
+              <div class="tab-pane fade in active" id="task{{loop.index0}}" >
+              {% else %}
+              <div class="tab-pane fade" id="task{{loop.index0}}" >
+              {% endif %}
+                <ul class="list-group">
+                  {% for sst in task.subTasks %}
+                    {% for st in sst %}
+                    <li class="list-group-item">
+                    <span class="badge">{{ st.reference }}</span>
+                    <h4 class="list-group-item-heading">{{ st.name }}</h4>
+                      {% for stp in st.steps %}
+                      <h6 class="list-group-item-heading">  {{ stp.description }}</h6>
+                      <h6 class="list-group-item-heading">  A:{{ stp.action }}</h6>
+                      <h6 class="list-group-item-heading">  C:{{ stp.component.name }}</h6>
+                        {% for key in stp.component.attributes %}
+                        <h6 class="list-group-item-heading">    {{key}}:{{ stp.component.attributes[key] }}</h6>
+                        {% endfor %}
+                      <h6 class="list-group-item-heading">  T:{{ stp.tool.name }}</h6>
+                        {% for key in stp.tool.attributes %}
+                        <h6 class="list-group-item-heading">    {{key}}:{{ stp.tool.attributes[key] }}</h6>
+                        {% endfor %}  
+                      {% endfor %}
+                    </li>
+                    {% endfor %}
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}  
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <p> Conversion took {{ result[2] }} seconds. </p>
+      {% endif %}
+      <hr>
+      {% endif %}
+
+      <form role="form" action="convert_url" method="get">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" name="ammurl" id="ammurl" placeholder="Provide an AMM URL">
+            <span class="input-group-btn">
+              <input class="btn btn-primary" value="Convert URL" type="submit" id="converturl"></input>
+            </span>
+          </div><!-- /input-group -->
+        </div>
+      </form>
+
+      <form id="formupload" class="form-inline" role="form" action="convert_upload" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="ammfile">Or upload an AMM html:</label>
+          <input type="file" name="ammfile" id="ammfile">
+        </div>
+        <!--<input type="submit" class="btn btn-primary" value="Classify File" id="classifyfile"></input>-->
+      </form>
+    </div>
+
+    <hr>
+    <div id="footer">
+      <div class="container">
+        <p>&copy; I2R Visual Computing 2017</p>
+      </div>
+   </div>
+ </body>
+</html>

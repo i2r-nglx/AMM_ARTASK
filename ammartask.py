@@ -142,9 +142,12 @@ def visible(element):
 def getAllTextFromHTML(filename):
 	if re.match('C:',filename) or re.match('E:',filename):
 		url = filename.replace('E:','file://').replace('C:','file://').replace('\\','/')
+	elif re.match('http',filename):
+		url = filename
 	else:
 		cwd = os.getcwd()
 		url = str(cwd).replace('E:','file://').replace('C:','file://').replace('\\','/')+"/"+filename
+		#url = filename
 
 	print (url)
 	html = urllib.request.urlopen(url)
@@ -265,6 +268,9 @@ def parseSubTaskList(setUpSubTaskList, toolListName, item, ActionsList, Componen
 	#toolListName = [t.name  for t in toolsList]
 	for i in range(len(setUpSubTaskList)):
 		st = subTask(setUpSubTaskList[i][2], word_tokenize(setUpSubTaskList[i][0])[1], i, "", item[1])
+		## hack to remove warning
+		if re.search("DECREASE",setUpSubTaskList[i][2]):
+			st = subTask(setUpSubTaskList[i][4], word_tokenize(setUpSubTaskList[i][0])[1], i, "", item[1])
 		suSubTaskList.append(st)
 		st.steps=[]
 		numStep = 0
@@ -453,7 +459,12 @@ def getTasks(filename,output,create_individual_task_output):
 
 
 		for j in range(1,6):
-			item = getSubList(taskList[i],str(j),str(j+1))
+			if j == 2:
+				item = getSubList(taskList[i],str(j),str(j+1)+'.')
+			elif j+1==2:
+				item = getSubList(taskList[i],str(j)+'.',str(j+1))
+			else:
+				item = getSubList(taskList[i],str(j)+'.',str(j+1)+'.')
 			items.append(item)
 
 		##item1 = Reason for job (redundant for this case)
