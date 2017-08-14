@@ -15,7 +15,7 @@ from PIL import Image
 from io import StringIO
 import urllib
 
-import ammartask
+import ammartask as ammartask
 
 REPO_DIRNAME = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
 HTML_FOLDER = 'http://127.0.0.1:8000/AMM_Uploads/'
